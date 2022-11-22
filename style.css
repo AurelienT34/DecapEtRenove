@@ -22,6 +22,52 @@ body {
     max-width: 1920px;
 }
 
+/*--HEADER--*/
+
+header  {
+    height: 120px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+}
+
+header .container {
+    width: 1500px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header .container ul {
+    display: flex;
+}
+
+header .container ul a {
+    font-size: 1.2e;
+    font-weight: 500;
+    margin: 0 30px;
+    color: #9C4613
+}
+
+@media (max-width :1500px) {
+    header {
+        background-color: #9C4613;
+        position: relative;
+    }
+
+    header .container {
+        width: 100%;
+    }
+
+    header .container ul a {
+        color: white;
+    }
+}
+
 /*--SECTION1--*/
 
 @media (min-width: 1500px) {
@@ -32,6 +78,14 @@ body {
         background-repeat: no-repeat;
         background-position: top right;
     }
+    .sec1 .bg-responsive {
+        display: none;
+    }
+}
+
+.sec1 {
+    height: 100%;
+    margin-top: 100px;
 }
 
 .sec1 .container {
@@ -95,4 +149,32 @@ body {
 .sec1 button:hover i {
     transform: scale(1);
     margin-left: 10px;
+}
+
+
+.sec1 .bg-responsive {
+    margin-top: 50px;
+}
+
+.sec1 .bg-responsive img {
+    width: 50%;
+}
+
+@media (max-width :1500px) {
+    .sec1 .container {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .sec1 {
+        height: 100%;
+    }
+}
+
+@media (max-width :950px) {
+    .sec1 h1 {
+        font-size: 6em;
+        margin-bottom: 60px;
+    }
 }
