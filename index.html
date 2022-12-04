@@ -14,6 +14,12 @@
         <link rel="stylesheet" href="style.css"/>
     </head>
     <body>
+        <div class="onglet-side">
+            <a href="#accueil" id="un" class="active"></a>
+            <a href="#Prestations" id="deux"></a>
+            <a href="#propos" id="trois"></a>
+            <a href="#contact" id="quatre"></a>
+        </div>
         <header>
             <div class="container">
                 <div class="logo">
@@ -21,32 +27,37 @@
                 </div>
                 <div class="onglet">
                     <ul>
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Prestations</a></li>
-                        <li><a href="">Photos</a></li>
-                        <li><a href="">À propos de nous</a></li>
-                        <li><a href="">Contact</a></li>
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#Prestations">Prestations</a></li>
+                        <li><a href="#">Photos</a></li>
+                        <li><a href="#propos">À propos de nous</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
                 <div class="logo"></div>
             </div>
         </header>
-        <div class="sec1">
+
+
+
+        <section class="sec1" id="accueil">
             <div class="container">
                 <h1>Décap et <br> Rénove</h1>
-                <a href="#">
+                <a href="#Prestations">
                     <button>
                         En savoirs plus
                         <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
                     </button>
                 </a>
-                <div class="bg-responsive" style="display: none">
+                <div class="bg-responsive">
                     <img src="img/4.jpg" alt="image_responsive">
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="sec2">
+
+
+        <section class="sec2" id="Prestations">
             <div class="container">
                 <div class="title">
                     <h1>Prestations</h1>
@@ -57,7 +68,7 @@
                             <div class="point"></div>
                             <h2>Décapage - Relookage</h2>
                         </div>
-                        <div class="seprateur"></div>
+                        <div class="separateur"></div>
                         <p>
                             <ul>
                                 <li><p>Mobilier :  cuisines rustiques en bois, salles à manger, commodes, bahuts, lits anciens  etc...</p></li>
@@ -83,7 +94,7 @@
                             <div class="point"></div>
                             <h2>Nos services</h2>
                         </div>
-                        <div class="seprateur"></div>
+                        <div class="separateur"></div>
                         <p>
                             <ul>
                                 <li><p>L'enlèvement et la livraison</p></li>
@@ -98,8 +109,100 @@
                     </div>
                     </div>
                 </div>
-
             </div>
-        </div>
+        </section>
+
+
+
+        <section class="sec3">
+            <div class="container" id="propos">
+                <div class="left">
+                    <h1>À propos de nous</h1>
+                    <div class="separateur"></div>
+                    <p>Menuisier ébéniste de formation, lauréat du 2è prix des Métiers d'Art par la Chambre des Métiers de Montpellier en 1989 et plus de 30 ans  d'expérience  dans le domaine du bois.</p>
+                    <p>DECAP et RENOVE peut assurer la fabrication, la rénovation, le décapage de vos  meubles,  menuiseries en bois et pose de parquets.</p>
+                    <p>DECAP et RENOVE est une société basée en périphérie de Montpellier, spécialisée dans le dégraissage, le décapage écologique de toutes surfaces par aérogommage à basse pression. Ce procédé écologique respecte l’environnement, ne fait appel à aucun produit chimique.</p>
+                    <p>DECAP et RENOVE intervient sur Montpellier et sa région ainsi que dans les départements environnants.</p>
+                    <p>DECAP et RENOVE est une entreprise sérieuse et innovante dont la seule préoccupation est de satisfaire le client.</p>
+                    <p>Peu importe la nature de votre projet de rénovation, ou sa taille, ce qui compte c’est l’intérêt que vous portez à votre patrimoine. Qu’il soit individuel, collectif, artisanal ou industriel, DECAP et RENOVE vous aide à le conserver et à le faire perdurer.</p>
+                    <a href="#propos">
+                        <button>
+                            Galerie photos
+                            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                        </button>
+                    </a>
+                </div>
+                <div class="right">
+                    <img src="img/bench-g4e10a93df_1920.jpg" alt="photo">
+                </div>
+            </div>
+        </section>
+
+
+
+        <section class="sec4"  id="contact">
+            <div class="content">
+                <div class="left">
+                    <img src="img/kitchen-ga5133a347_1920.jpg" alt="photo">
+                </div>
+
+                <div class="mid">
+                    <h1>Nous contacter</h1>
+                    <h2>06 32 37 80 17</h2>
+                    <h2>decapetrenove@outlook.fr</h2>
+                    <p>Vous pouvez également remplir le formulaire</p>
+                    <a href="./contact.html">
+                        <button>
+                            Formulaire
+                            <i class="fas fa-long-arrow-alt-right" aria-hidden="true"></i>
+                        </button>
+                    </a>
+                </div>
+
+                <div class="right">
+                    <img src="img/heart-g8321d0596_1920.jpg" alt="photo">
+                </div>
+            </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+        <script type="text/javascript">
+            $(document).on("click",".onglet-side a", function() {
+                $(this).removeClass("active")
+            })
+
+            $(window).scroll(function() {
+
+                var windowpos = $(window).scrollTop();
+
+                if( windowpos < 350) {
+                    $('#un').addClass('active');
+                } else {
+                    $('#un').removeClass('active');
+                }
+
+                if( windowpos >= 350 & windowpos < 1560) {
+                    $('#deux').addClass('active');
+                } else {
+                    $('#deux').removeClass('active');
+                }
+
+                if( windowpos >= 1560 & windowpos < 2560) {
+                    $('#trois').addClass('active');
+                } else {
+                    $('#trois').removeClass('active');
+                }
+
+                if( windowpos >= 2560) {
+                    $('#quatre').addClass('active');
+                } else {
+                    $('#quatre').removeClass('active');
+                }
+
+
+            });
+        </script>
     </body>
 </html>
