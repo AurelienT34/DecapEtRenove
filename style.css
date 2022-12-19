@@ -655,6 +655,7 @@ header .container ul a {
 
 .onglet-side a.active {
     background-color: #9C4613;
+    pointer-events: none;
 }
 
 @media (max-width: 1600px) {
@@ -775,4 +776,16 @@ input[type="button"] {
 
 ::placeholder {
   color: #fff;
+}
+
+
+/** GALERIE**/
+
+.sec1-galerie {
+    background: linear-gradient(45deg, #9C4613, #9C4613);
+    height: 100vh;
+    font-family: arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
