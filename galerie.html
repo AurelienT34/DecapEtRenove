@@ -12,6 +12,8 @@
         rel="stylesheet" 
         type="text/css"/>
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="dics.css">
+        <script src="dics.js"></script>
     </head>
     <body>
         <header>
@@ -32,8 +34,216 @@
             </div>
         </header>
 
+        
+
         <div class="sec1-galerie">
-            
+            <div class="separateur-galerie"></div>
+            <div class="b-dics">
+                <img src="img/2_1.JPG" alt="Origine">
+                <img src="img/2_2.JPG" alt="Décapé">
+                <img src="img/2_3.JPG" alt="Peint">
+            </div>
+            <div class="b-dics">
+                <img src="img/3_1.JPG" alt="Origine">
+                <img src="img/3_2.JPG" alt="Décapé">
+                <img src="img/3_3.JPG" alt="Peint">
+            </div>
+            <div class="b-dics">
+                <img src="img/13_1.JPG" alt="Origine">
+                <img src="img/13_2.JPG" alt="Décapé">
+                <img src="img/13_3.JPG" alt="Peint">
+            </div>
+            <div class="b-dics">
+                <img src="img/19_1.JPG" alt="Origine">
+                <img src="img/19_2.JPG" alt="Décapé">
+                <img src="img/19_3.JPG" alt="Peint">
+            </div>
+            <div class="b-dics">
+                <img src="img/9_1.JPG" alt="Origine">
+                <img src="img/9_2.JPG" alt="Décapé">
+                <img src="img/9_3.JPG" alt="Peint">
+            </div>
+            <div class="b-dics">
+                <img src="img/1_1.JPG" alt="Origine">
+                <img src="img/1_2.JPG" alt="Décapé">
+            </div>
+            <div class="b-dics">
+                <img src="img/10_1.JPG" alt="Avant">
+                <img src="img/10_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/11_1.JPG" alt="Avant">
+                <img src="img/11_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/12_1.JPG" alt="Avant">
+                <img src="img/12_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/15_1.JPG" alt="Avant">
+                <img src="img/15_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/16_1.JPG" alt="Avant">
+                <img src="img/16_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/17_1.JPG" alt="Avant">
+                <img src="img/17_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/20_1.JPG" alt="Avant">
+                <img src="img/20_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/21_1.JPG" alt="Avant">
+                <img src="img/21_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/14_1.JPG" alt="Avant">
+                <img src="img/14_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/24_1.JPG" alt="Avant">
+                <img src="img/24_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/25_1.JPG" alt="Avant">
+                <img src="img/25_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/22_1.JPG" alt="Avant">
+                <img src="img/22_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/8_1.JPG" alt="Avant">
+                <img src="img/8_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/18_1.JPG" alt="Avant">
+                <img src="img/18_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/23_1.JPG" alt="Avant">
+                <img src="img/23_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/5_1.JPG" alt="Avant">
+                <img src="img/5_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/7_1.JPG" alt="Avant">
+                <img src="img/7_2.JPG" alt="Après">
+            </div>
+            <div class="b-dics">
+                <img src="img/6_1.JPG" alt="Avant">
+                <img src="img/6_2.JPG" alt="Après">
+            </div>
         </div>
+
+
+
+        <script>
+
+            document.addEventListener('DOMContentLoaded', domReady);
+    
+            function domReady() {
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[0]
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[1],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[2],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[3],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[4],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[5],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[6],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[7],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[8],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[9],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[10],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[11],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[12],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[13],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[14],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[15],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[16],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[17],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[18],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[19],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[20],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[21],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[22],
+                    textPosition: 'top'
+                });
+                new Dics({
+                    container: document.querySelectorAll('.b-dics')[23],
+                    textPosition: 'top'
+                });
+            }
+        </script>
     </body>
 </html>
