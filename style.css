@@ -57,7 +57,7 @@ header .container ul {
 }
 
 header .container ul a {
-    font-size: 1.2e;
+    font-size: 1.2em;
     font-weight: 500;
     margin: 0 30px;
     color: beige;
@@ -889,7 +889,7 @@ header .container-galerie ul {
 }
 
 header .container-galerie ul a {
-    font-size: 1.2e;
+    font-size: 1.2em;
     font-weight: 500;
     margin: 0 30px;
     color: beige;
