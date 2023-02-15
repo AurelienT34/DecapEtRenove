@@ -214,6 +214,7 @@ header .container ul a {
     }
 
     .sec1 .container {
+        display: block;
         text-align: center;
         justify-content: center;
         width: 100%;
