@@ -593,6 +593,7 @@ header .container ul a {
 
     .sec3 {
         height: 810px;
+        display: contents;
     }
 
     .sec3 .container {
@@ -710,6 +711,7 @@ header .container ul a {
 @media (max-width: 1250px) {
     .sec4 {
         filter: none;
+        margin-top: 50px;
     }
 
     .sec4 .container {
@@ -749,10 +751,6 @@ header .container ul a {
     .sec4 .container .left img {
         width: 300px;
     }
-
-    section {
-        margin-bottom: 50px;
-    }
 }
 
 @media (max-width: 500px) {
@@ -760,18 +758,17 @@ header .container ul a {
     .sec4 {
         height: 400px;
     }
+
+    .sec4 .mid {
+        margin-top: 100px;
+    }
 }
 
-@media (max-width: 410px) {
-
-    .sec4 {
-        height: 500px;
-    }
-
+@media (max-width: 415px) {
     .sec4 .mid h1,
     .sec4 .mid h2,
     .sec4 .mid p {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 }
 
