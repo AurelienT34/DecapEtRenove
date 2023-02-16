@@ -884,7 +884,7 @@ header .container-contact {
 @media (max-width: 300px) {
 
     header .container-contact ul a {
-        font-size: 0.6em;
+        font-size: 0.5em;
     }
 }
 
@@ -1106,7 +1106,7 @@ header .container-galerie ul a {
 @media (max-width: 300px) {
 
     header .container-galerie ul a {
-        font-size: 0.6em;
+        font-size: 0.7em;
     }
 }
 
